@@ -29,7 +29,7 @@
         padding-bottom: 0;
       }
       .cell {
-        background-color: #6699FF;
+        background-color: #c73625;
         color: white;
         height: 34px;
       }
