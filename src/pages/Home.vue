@@ -7,7 +7,7 @@
       <el-header height="100" class="home-header banner clearfix">
         <div class="banner clearfix">
             <div class="bannerLeft">
-                <p class="G-paper">中国知网科研诚信部后台dms系统 </p>
+                <p class="G-paper">欢迎使用zeus后台管理系统 </p>
             </div>
             <div class="middle"></div>
             <div class="bannerRight">
@@ -229,7 +229,7 @@ export default {
   }
 
   .home-header {
-    background-color: #436bbd;
+    //background-color: #436bbd;
     height:100px;
     color: #333;
     text-align: center;

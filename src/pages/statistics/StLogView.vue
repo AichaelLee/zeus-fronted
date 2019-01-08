@@ -55,7 +55,7 @@
       <el-row style="padding-left:10px;padding-right:10px">
         <!-- 0001 -->
         <el-row>
-          <el-col :md="24" style="padding-top:15px">
+          <el-col :md="24"  style="padding-top:15px">
             <el-row type="flex" justify="center" class="juzhong">
               <el-col :lg="5" class="text-center" style="text-align:center">
                 <span style="font-size:16px"><i class="el-icon-edit"></i> 查看操作日志</span>
@@ -74,7 +74,7 @@
           </el-col>
           <el-col :lg="2" :md="4" :sm="6" :xs="12" style="min-width:200px">
             <el-form-item label="操作人" content="请输入操作人姓名。">
-              <el-input v-model='userForm.name' size="mini" style="width:100%;" class="form-control-own-border"></el-input>
+              <el-input v-model='userForm.name' size="mini" style="width:100%;" class="form-control-own-border" clearable ></el-input>
             </el-form-item>
           </el-col>
          
@@ -84,17 +84,17 @@
               </el-date-picker>
             </el-form-item>
           </el-col>
-           <el-col :lg="5" :md="8" :sm="12" :xs="24" style="min-width:320px">
+           <!-- <el-col :lg="5" :md="8" :sm="12" :xs="24" style="min-width:320px">
             <el-button type="info" plain @click="reset" size="small"><i class="fa fa-refresh "></i> 重置</el-button>
-          </el-col>
+          </el-col> -->
         </el-row>
 
       </el-row>
     </el-form>
     <!-- 0001 -->
     <el-row style="padding-top:10px;">
-      <el-col :lg="24">
-        <el-table :fit="true" :border="true" v-loading="tableload" element-loading-text="数据载入中" element-loading-background="rgba(255, 255, 255, 0.6)" :data="tableDataView" style="width:1160px" size="mini" :default-sort="{prop: 'date', order: 'descending'} ">
+      <el-col :lg="18">
+        <el-table :fit="true" :border="true" v-loading="tableload" element-loading-text="数据载入中" element-loading-background="rgba(255, 255, 255, 0.6)" :data="tableDataView" style="width:942px" size="mini" :default-sort="{prop: 'date', order: 'descending'} ">
           <el-table-column label="#" width="60" align="center">
             <template slot-scope="scope">
               <span>{{(scope.$index+1)+(pagenum-1)*pageSize}}</span>
@@ -114,7 +114,7 @@
       </el-col>
        </el-row>
        <el-row  style="padding-top:20px;">
-      <el-col :lg="19">
+      <el-col :lg="14">
         <el-pagination background  @size-change="handleSizeChange"
           @current-change="handleCurrentChange"
           :current-page="pagenum"

@@ -1,7 +1,7 @@
 <template>
   <el-form :rules="rules" class="login-container" label-position="left"
            label-width="0px" v-loading="loading">
-    <h3 class="login_title">中国知网教改项目管理系统</h3>
+    <h3 class="login_title">zeus后台管理系统</h3>
     <el-form-item prop="account">
       <el-input type="text" v-model="loginForm.username"
                 auto-complete="off" placeholder="账号"></el-input>

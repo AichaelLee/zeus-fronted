@@ -16,8 +16,8 @@ export default {
   data() {
     return {
       content:
-      `<h1 style="text-align: center;">欢迎进入CNKI论文写作系统的VUE版本!</h1><p style="text-align: center; font-size: 15px;"><ul>
-        <li><a href="localhost:8080">我们的产品</a> 欢迎使用CNKI论文写作系统</li><li>使用vue重构，体验更流畅</a>.</li>
+      `<h1 style="text-align: center;">测试多文本，目前此部分还未关联数据库!</h1><p style="text-align: center; font-size: 15px;"><ul>
+        <li><a href="localhost:8080">我们的产品</a> 欢迎使用zeus后台管理系统</li><li>使用vue重构，体验更流畅</a>.</li>
       </ul>`
     }
   }

@@ -67,7 +67,7 @@ import {formatRoutes} from '../utils/utils'
                   router.addRoutes(fmtRoutes);
                   // console.log(fmtRoutes)
                   store.commit('initMenu', fmtRoutes);
-                  store.dispatch('connect');
+                
                 }
               }).catch(reson=>{
                 alert("reget menu error"+reson)

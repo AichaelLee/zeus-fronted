@@ -1,4 +1,4 @@
-# cnki
+# zeus
 
 > A Vue.js project
 

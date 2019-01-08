@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>
-      CNKI-GM 学生数据统计
+      zeus 系统监控
     </h1>
   </div>
 </template>

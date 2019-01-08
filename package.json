@@ -1,7 +1,7 @@
 {
-  "name": "cnki-fronted",
+  "name": "zeus-fronted",
   "version": "1.0.0",
-  "description": "cnki-gm system's fronted",
+  "description": "zeus framework fronted",
   "author": "lizhizhong <aichaellee320@gmail.com>",
   "private": true,
   "scripts": {

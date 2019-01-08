@@ -6,6 +6,9 @@
       border-right: 0;
       border-radius: 0;
     }
+    .el-select{
+      width: 100%;
+    }
     .el-form-item__label {
       height: 20px !important;
       font-size: 12px;
@@ -123,7 +126,24 @@
           </el-table-column>
           <el-table-column  label="用户角色 " sortable  width="160" align="center" >
               <template slot-scope="scope">
-                 <div v-for="item in scope.row.roles" :key="item.id"><span>{{item.nameZh}}</span></div></template>
+<!--                  
+                <el-select
+                    v-model="scope.row.roles"
+                    multiple
+                    filterable
+                    allow-create
+                    default-first-option
+                    placeholder="所有角色">
+                    <el-option
+                      v-for="item in accesspermission"
+                      :key="item.value"
+                      :label="item.label"
+                      :value="item.value">
+                    </el-option>
+                  </el-select> -->
+    
+                 <div v-for="item in scope.row.roles" :key="item.id"><span>{{item.nameZh}}</span></div>
+                 </template>
           </el-table-column>
           <el-table-column prop="loginStatus" label=" 登录状态 " sortable width="160" :formatter="formaterloginStatus" align="center">
           </el-table-column>
@@ -413,6 +433,7 @@
           email: '',
           accontType: 1
         },
+        rolesArray:'',
         // 当前第几页
         pagenum: 1,
         // 每页条数
@@ -493,18 +514,18 @@
           }]
         },
         accesspermission: [{
-          value: 10,
-          label: '教师'
+          value: 1,
+          label: '开发人员'
         }, {
-          value: 20,
-          label: '评审专家'
+          value: 2,
+          label: '客服人员'
         },
         {
-          value: 30,
-          label: '院级管理员'
+          value: 3,
+          label: '研发经理'
         }, {
-          value: 20,
-          label: '校级管理员'
+          value: 4,
+          label: '部门经理'
         }],
         rules: {
           //访问权限
